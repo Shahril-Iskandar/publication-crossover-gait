@@ -83,8 +83,7 @@ figure <- ggarrange(left_plot, right_plot,
                     ncol=2, nrow=1)
 
 # Show figure
-windows();plot(stuff) # If using VSCode to run script
-figure
+windows();plot(figure) # If using VSCode to run script
 
 # Change accordingly to the directory you want to save 
 # setwd("C:/Users/14000/Downloads/Publications/Frontiers in Bioengineering") 
@@ -97,4 +96,3 @@ ggsave(
   units = "px",
   dpi=300
 )
-
